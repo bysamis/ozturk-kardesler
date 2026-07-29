@@ -161,3 +161,10 @@ document.addEventListener('touchmove', function(event) {
         event.preventDefault();
     }
 }, false);
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        adjustFloatingActions();
+    }, 200);
+
+    window.dispatchEvent(new Event("resize"));
+});
