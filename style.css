@@ -38,12 +38,16 @@ body {
     background-color: var(--bg-light);
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .page-wrap {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding-bottom: 0;
 }
 
 a {
@@ -625,7 +629,8 @@ section {
 .footer {
     background-color: var(--bg-dark);
     color: var(--light-text);
-    padding: 60px 0 20px;
+    padding: 60px 0 80px;
+    margin-top: auto;
 }
 
 .footer-grid {
@@ -1039,7 +1044,7 @@ section {
     }
 
     .footer {
-        padding: 50px 0 110px;
+        padding: 50px 0 120px;
     }
 
     .footer-grid {
