@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://alpler.vercel.app/">
+    
+    <!-- Primary Meta Tags -->
+    <title>Öztürk Kardeşler | 7/24 Yol Yardım & Lastik Tamiri - Başakşehir Lastikçi</title>
+    <meta name="title" content="Öztürk Kardeşler | 7/24 Yol Yardım & Lastik Tamiri - Başakşehir Lastikçi">
+    <meta name="description" content="Başakşehir Öztürk Kardeşler: 7/24 yol yardım, yerinde lastik tamiri, balans ayarı ve sıfır/ikinci el lastik satışı. İkitelli OSB, Kayaşehir, Halkalı ve çevresine hizmet. Tel: 0551 961 96 18">
+    <meta name="keywords" content="oto lastik, yol yardım, lastik tamiri, başakşehir lastikçi, 7/24 lastikçi, ikitelli lastikçi, kayaşehir lastikçi, halkalı lastikçi, yerinde lastik tamiri, sıfır lastik, ikinci el lastik, balans ayarı, öztürk kardeşler">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpler.vercel.app/">
+    <meta property="og:title" content="Öztürk Kardeşler | 7/24 Yol Yardım & Lastik Tamiri">
+    <meta property="og:description" content="Başakşehir'de 7/24 yol yardım, yerinde lastik tamiri, balans ayarı ve sıfır/ikinci el lastik satışı. İkitelli OSB, Kayaşehir, Halkalı ve çevresine hizmet.">
+    <meta property="og:image" content="https://alpler.vercel.app/oto_lastik.jpeg">
+    <meta property="og:locale" content="tr_TR">
+    <meta property="og:site_name" content="Öztürk Kardeşler">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpler.vercel.app/">
+    <meta property="twitter:title" content="Öztürk Kardeşler | 7/24 Yol Yardım & Lastik Tamiri">
+    <meta property="twitter:description" content="Başakşehir'de 7/24 yol yardım, yerinde lastik tamiri, balans ayarı ve sıfır/ikinci el lastik satışı.">
+    <meta property="twitter:image" content="https://alpler.vercel.app/oto_lastik.jpeg">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Öztürk Kardeşler",
+        "image": "https://alpler.vercel.app/oto_lastik.jpeg",
+        "@id": "https://alpler.vercel.app/",
+        "url": "https://alpler.vercel.app/",
+        "telephone": "+905519619618",
+        "email": "beratkabul168@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Aykosan San. Sit. 4lü C Blok No:62",
+            "addressLocality": "İkitelli OSB",
+            "addressRegion": "İstanbul",
+            "postalCode": "34944",
+            "addressCountry": "TR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 41.071741,
+            "longitude": 28.7960502
+        },
+        "areaServed": [
+            "Başakşehir",
+            "İkitelli OSB",
+            "Kayaşehir",
+            "Halkalı",
+            "İstanbul"
+        ],
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "priceRange": "$$",
+        "description": "Başakşehir Öztürk Kardeşler olarak 7/24 yol yardım, yerinde lastik tamiri, balans ayarı ve sıfır/ikinci el lastik satışı hizmetleri sunuyoruz.",
+        "sameAs": [
+            "https://maps.app.goo.gl/gHjGj1G5HaBn4xqu8"
+        ]
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-content">
+                <i class="fa-solid fa-headset"></i>
+                <span>7/24 DESTEK HATTI : 0551 961 96 18</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- GEO Alert Container -->
+    <div id="geo-alert-container" style="position: fixed; top: 48px; left: 50%; transform: translateX(-50%); z-index: 1002; max-width: 90%; width: auto;"></div>
+
+    <div class="floating-actions" id="floating-actions">
+        <a href="tel:05519619618" class="phone-call-btn" aria-label="Telefon ile ara">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://wa.me/905519619618" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="WhatsApp ile yaz">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bottom Floating Buttons -->
+    <div class="bottom-floating-buttons">
+        <a href="tel:05519619618" class="bottom-call-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span>Ara</span>
+        </a>
+        <a href="tel:05519619618" class="bottom-emergency-btn">
+            <i class="fa-solid fa-phone"></i>
+            <span>Acil</span>
+        </a>
+        <a href="https://wa.me/905519619618" target="_blank" rel="noopener noreferrer" class="bottom-location-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+    </div>
+
+    <div class="page-wrap">
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                ÖZTÜRK <span>KARDEŞLER</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#hero">Anasayfa</a>
+                <a href="#hakkimizda">Kurumsal</a>
+                <a href="#hizmetler">Hizmetlerimiz</a>
+                <a href="#iletisim">İletişim</a>
+            </nav>
+            <a href="tel:05519619618" class="btn-phone">
+                <i class="fa-solid fa-phone"></i> 0551 961 96 18
+            </a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>7/24 Kesintisiz <span>Yol Yardım</span> <br> ve Lastik Hizmeti</h1>
+            <p>Sıfır ve ikinci el lastik satışı, yerinde lastik tamiri ve balans ayarı. Yolda kaldığınızda profesyonel ekibimizle anında yanınızdayız.</p>
+            <div class="hero-buttons">
+                <a href="#hizmetler" class="btn-primary">Hizmetleri İncele <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="tel:05519619618" class="btn-secondary">Acil Bize Ulaşın</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="hakkimizda" class="about">
+        <div class="container about-container">
+            <div class="about-text" data-aos="fade-up">
+                <h2 class="section-subtitle">Hakkımızda</h2>
+                <h3 class="section-title">15 Yıllık Tecrübe İle Güvenli Sürüşler</h3>
+                <p>Başakşehir'de 15 yılı aşkın süredir oto lastik sektöründe güvenilir ve kaliteli hizmet anlayışıyla faaliyet gösteriyoruz. Müşteri memnuniyetini ön planda tutarak, güvenli sürüş deneyimi için ihtiyaç duyulan tüm lastik çözümlerini tek çatı altında sunuyoruz.</p>
+                <ul class="about-list">
+                    <li><i class="fa-solid fa-check"></i> Profesyonel ve Deneyimli Ekip</li>
+                    <li><i class="fa-solid fa-check"></i> Kaliteli ve Güvenilir Hizmet</li>
+                    <li><i class="fa-solid fa-check"></i> Rekabetçi ve Şeffaf Fiyatlandırma</li>
+                    <li><i class="fa-solid fa-check"></i> 7/24 Kesintisiz Destek</li>
+                </ul>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="oto_lastik.jpeg" alt="Öztürk Kardeşler - Lastik Tamir Hizmeti">
+            </div>
+        </div>
+    </section>
+
+    <section id="hizmetler" class="services">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-subtitle">Hizmetlerimiz</h2>
+                <h3 class="section-title">Kapsamlı Lastik Çözümleri</h3>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-road service-icon"></i>
+                    <h4>7/24 Yol Yardım</h4>
+                    <p>Yolda kaldığınızda saat kaç olursa olsun, 15-20 dakika içinde yanınızdayız. Profesyonel ekibimiz tüm durumları çözmek için hazırdır.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+                    <h4>Yerinde Lastik Tamiri</h4>
+                    <p>Sıfır ve ikinci el lastik satışı, yerinde lastik tamiri ve balans ayarı hizmetleri sunuyoruz. Tüm işlemler uzman kadromuz tarafından yapılır.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-scale-balanced service-icon"></i>
+                    <h4>Balans Ayarı</h4>
+                    <p>Lastik dengesi için profesyonel balans ayarı hizmetimiz, araçınızın sürüş konforunu ve güvenliğini maksimum seviyeye çıkarır.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-cart-shopping service-icon"></i>
+                    <h4>Lastik Satışı</h4>
+                    <p>Sıfır ve ikinci el lastiklerimiz kontrol edilmiş ve kaliteli. Tüm satın alımlarda garanti desteği sağlanır.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-subtitle">Müşteri Yorumları</h2>
+                <h3 class="section-title">Memnun Müşterilerimiz Ne Diyor?</h3>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Gece saat 3'te yolda kaldım, yarım saat içinde gelip lastiğimi tamir ettiler. Çok profesyonel ve hızlılar."</p>
+                    <div class="client-info">
+                        <strong>Mehmet Yılmaz</strong>
+                        <span>Taksi Şoförü</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"Sıfır lastik alırken çok yardımcı oldular. Fiyatları piyasaya göre oldukça uygun. Tavsiye ederim."</p>
+                    <div class="client-info">
+                        <strong>Ahmet Kaya</strong>
+                        <span>Bireysel Müşteri</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>"İşini titizlikle yapan bir ekip. Balans ayarı sonrası aracımın sürüş konforu belirgin şekilde arttı."</p>
+                    <div class="client-info">
+                        <strong>Caner Demir</strong>
+                        <span>Filo Yöneticisi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-subtitle">SSS</h2>
+                <h3 class="section-title">Sıkça Sorulan Sorular</h3>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Yol yardım hizmetiniz hangi bölgeleri kapsıyor?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aykosan San. Sit. merkezli olmak üzere tüm İkitelli OSB, Kayaşehir, Halkalı ve çevresindeki ilçelere 7/24 hizmet vermekteyiz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Yolda kaldığımda ortalama ne kadar sürede yanımda oluyorsunuz?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Trafik durumuna bağlı olarak ortalama 15-20 dakika içerisinde konumunuza ulaşıyoruz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>İkinci el lastiklerinizde garanti veriyor musunuz?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, sattığımız tüm ikinci el lastikler uzman ekibimiz tarafından kontrol edilir ve belirli bir süre kullanım garantisi sunulur.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image map-embed" data-aos="fade-right">
+                    <iframe
+                        title="Öztürk Kardeşler Konum"
+                        src="https://maps.google.com/maps?q=41.071741,28.7960502&hl=tr&z=17&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/gHjGj1G5HaBn4xqu8" target="_blank" rel="noopener noreferrer" class="map-link-btn">
+                        <i class="fa-solid fa-location-dot"></i> Haritada Aç
+                    </a>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h2 class="section-subtitle">Neden Biz?</h2>
+                    <h3 class="section-title">Hızlı, Güvenilir ve Profesyonel Hizmet</h3>
+                    <p>Müşterilerimizin yolda kalma stresini en aza indirmek için modern ekipmanlarımız ve uzman kadromuzla yanınızdayız.</p>
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-clock"></i> 15 Dakikada Yanınızdayız</li>
+                        <li><i class="fa-solid fa-shield-halved"></i> Güvenilir Ekipmanlar</li>
+                        <li><i class="fa-solid fa-tag"></i> Şeffaf ve Uygun Fiyatlar</li>
+                        <li><i class="fa-solid fa-headset"></i> 7/24 Kesintisiz İletişim</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-text">Yıllık Tecrübe</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">80+</div>
+                <div class="stat-text">Mutlu Müşteri</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">80+</div>
+                <div class="stat-text">Olumlu Geri Dönüş</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7/24</div>
+                <div class="stat-text">Kesintisiz Destek</div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <div class="logo footer-logo">ÖZTÜRK <span>KARDEŞLER</span></div>
+                <p>Oto lastik sektöründe güvenilir ve kaliteli hizmet anlayışıyla 7/24 yol yardım ve lastik tamiri sunuyoruz.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Hızlı Menü</h4>
+                <ul>
+                    <li><a href="#hakkimizda">Hakkımızda</a></li>
+                    <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>İletişim Bilgileri</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Aykosan San. Sit. 4lü C Blok No:62, İkitelli OSB, 34944 Başakşehir/İstanbul</li>
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:05519619618">0551 961 96 18</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:beratkabul168@gmail.com">beratkabul168@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-copyright">
+            <p>&copy; 2024 Öztürk Kardeşler. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    </script>
+    <script src="script.js"></script>
+    <script>
+        // GEO LOCATION CONTROL
+        function initGeoControl() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        const lat = position.coords.latitude;
+                        const lng = position.coords.longitude;
+                        
+                        // Türkiye koordinatları: 36°-42° N, 25°-45° E
+                        const inTurkey = lat >= 36 && lat <= 42 && lng >= 25 && lng <= 45;
+                        
+                        if (inTurkey) {
+                            showGeoAlert('success', '✓ Türkiye\'de konumlandırıldınız. Tüm hizmetlerimiz size açıktır.');
+                        } else {
+                            showGeoAlert('warning', '⚠ Türkiye dışında konumlandınız. Hizmetlerimiz Türkiye sınırları içinde verilmektedir.');
+                        }
+                    },
+                    function(error) {
+                        console.log('Konum izni reddedildi veya alınamadı');
+                    }
+                );
+            }
+        }
+        
+        function showGeoAlert(type, message) {
+            const container = document.getElementById('geo-alert-container');
+            if (container) {
+                container.innerHTML = `<div class="geo-alert ${type}">${message}</div>`;
+                setTimeout(() => {
+                    container.innerHTML = '';
+                }, 5000);
+            }
+        }
+        
+        // Sayfa yüklendikten sonra GEO kontrolü başlat
+        window.addEventListener('load', initGeoControl);
+    </script>
+</body>
+</html>
