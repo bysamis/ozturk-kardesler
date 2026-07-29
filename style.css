@@ -706,14 +706,17 @@ section {
 /* Floating Actions */
 .floating-actions {
     position: fixed;
-    bottom: 100px;
     right: 20px;
+    bottom: calc(100px + env(safe-area-inset-bottom));
     display: flex;
     flex-direction: column;
     gap: 15px;
-    z-index: 999;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transform: translateZ(0);
+    will-change: transform;
 }
-
 .phone-call-btn,
 .whatsapp-btn {
     width: 60px;
@@ -953,9 +956,9 @@ section {
     }
 
     .floating-actions {
-        bottom: 85px;
-        right: 16px;
-        gap: 12px;
+    bottom: calc(85px + env(safe-area-inset-bottom));
+    right: 16px;
+    gap: 12px;
     }
 
     .phone-call-btn,
@@ -1149,9 +1152,9 @@ section {
     }
 
     .floating-actions {
-        bottom: 75px;
-        right: 12px;
-        gap: 10px;
+    bottom: calc(75px + env(safe-area-inset-bottom));
+    right: 12px;
+    gap: 10px;
     }
 
     .phone-call-btn,
@@ -1227,9 +1230,9 @@ section {
     }
 
     .floating-actions {
-        bottom: 70px;
-        right: 10px;
-        gap: 8px;
+    bottom: calc(70px + env(safe-area-inset-bottom));
+    right: 10px;
+    gap: 8px;
     }
 }
 
