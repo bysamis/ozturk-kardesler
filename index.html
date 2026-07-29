@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <link rel="canonical" href="https://alpler.vercel.app/">
@@ -18,7 +19,7 @@
     <meta property="og:url" content="https://alpler.vercel.app/">
     <meta property="og:title" content="Öztürk Kardeşler | 7/24 Yol Yardım & Lastik Tamiri">
     <meta property="og:description" content="Başakşehir'de 7/24 yol yardım, yerinde lastik tamiri, balans ayarı ve sıfır/ikinci el lastik satışı. İkitelli OSB, Kayaşehir, Halkalı ve çevresine hizmet.">
-    <meta property="og:image" content="https://alpler.vercel.app/oto_lastik.jpeg">
+    <meta property="og:image" content="https://alpler.vercel.app/oto_lastik.jpg">
     <meta property="og:locale" content="tr_TR">
     <meta property="og:site_name" content="Öztürk Kardeşler">
     
@@ -27,7 +28,7 @@
     <meta property="twitter:url" content="https://alpler.vercel.app/">
     <meta property="twitter:title" content="Öztürk Kardeşler | 7/24 Yol Yardım & Lastik Tamiri">
     <meta property="twitter:description" content="Başakşehir'de 7/24 yol yardım, yerinde lastik tamiri, balans ayarı ve sıfır/ikinci el lastik satışı.">
-    <meta property="twitter:image" content="https://alpler.vercel.app/oto_lastik.jpeg">
+    <meta property="twitter:image" content="https://alpler.vercel.app/oto_lastik.jpg">
     
     <!-- Local Business Schema -->
     <script type="application/ld+json">
@@ -35,7 +36,7 @@
         "@context": "https://schema.org",
         "@type": "AutoRepair",
         "name": "Öztürk Kardeşler",
-        "image": "https://alpler.vercel.app/oto_lastik.jpeg",
+        "image": "https://alpler.vercel.app/oto_lastik.jpg",
         "@id": "https://alpler.vercel.app/",
         "url": "https://alpler.vercel.app/",
         "telephone": "+905519619618",
@@ -81,10 +82,78 @@
         ]
     }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
+    <!-- Preconnect: 3. taraf isteklerinin DNS/TLS gecikmesini azaltır -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+
+    <!-- LCP görseli (hero arkaplanı) önceden yükleniyor, geç keşif önleniyor -->
+    <link rel="preload" as="image" href="oto_lastik.webp" fetchpriority="high" type="image/webp">
+
+    <!-- Kritik CSS: ilk ekranda görünen içerik için satır içi (render-blocking'i azaltır) -->
+    <style>
+        :root{--primary-color:#e63946;--secondary-color:#1d3557;--accent-color:#f1faee;--text-color:#333;--light-text:#fff;--bg-light:#f8f9fa;--bg-dark:#212529;--transition:all .3s ease;--card-bg:#fff;--nav-bg:rgba(255,255,255,.95)}
+        *{margin:0;padding:0;box-sizing:border-box}
+        html{scroll-behavior:smooth}
+        body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.6;color:var(--text-color);background-color:var(--bg-light);overflow-x:hidden;display:flex;flex-direction:column;min-height:100vh}
+        .page-wrap{display:flex;flex-direction:column;flex:1;padding-bottom:90px}
+        @media (max-width:768px){.page-wrap{padding-bottom:82px}}
+        @media (max-width:480px){.page-wrap{padding-bottom:calc(78px + env(safe-area-inset-bottom))}}
+        a{text-decoration:none;color:inherit}
+        ul{list-style:none}
+        img{max-width:100%;height:auto}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;width:100%;box-sizing:border-box}
+        .top-bar{background-color:#28a745;color:#fff;padding:8px 0;position:fixed;top:0;left:0;width:100%;z-index:1001;overflow:hidden}
+        .top-bar-container{display:flex;justify-content:center;align-items:center}
+        .top-bar-content{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.9rem}
+        .navbar{position:fixed;top:40px;left:0;width:100%;background-color:#1a1a1a;box-shadow:0 2px 10px rgba(0,0,0,.1);z-index:1000;padding:15px 0;transition:var(--transition);box-sizing:border-box;overflow-x:hidden}
+        .nav-container{display:flex;justify-content:space-between;align-items:center;gap:15px;width:100%;max-width:1200px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+        .logo{font-size:24px;font-weight:900;color:#fff;display:flex;align-items:center;gap:10px;white-space:nowrap;min-width:fit-content}
+        .logo span{color:#e63946}
+        .nav-links{display:flex;gap:30px}
+        .nav-links a{font-weight:500;color:#fff}
+        .btn-phone{background-color:#e63946;color:#fff;padding:10px 20px;border-radius:50px;font-weight:700;display:flex;align-items:center;gap:10px;white-space:nowrap;min-width:fit-content}
+        .mobile-menu-btn{display:none;background:none;border:none;font-size:24px;color:#fff;cursor:pointer;z-index:1001}
+        .theme-toggle{background:var(--secondary-color);color:var(--bg-light);border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;min-width:40px;min-height:40px}
+        @media (max-width:992px){.nav-links{position:absolute;top:100%;left:0;width:100%;flex-direction:column;background-color:#1a1a1a;display:none;gap:0;padding:15px 0}.nav-links.nav-active{display:flex}.mobile-menu-btn{display:block}.navbar{flex-wrap:wrap}.btn-phone{display:none}.hero-content h1{font-size:2rem}.hero-content p{font-size:1.1rem}}
+        .hero{min-height:100vh;height:auto;min-height:600px;background-color:#1a1a1a;background-image:url('oto_lastik.jpg');background-image:image-set(url('oto_lastik.webp') type('image/webp') 1x,url('oto_lastik.jpg') type('image/jpeg') 1x);background-position:center;background-size:cover;background-repeat:no-repeat;display:flex;align-items:center;position:relative;color:#fff;padding-top:120px;padding-bottom:80px}
+        .hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to right,rgba(0,0,0,.95),rgba(0,0,0,.7));z-index:1}
+        .hero-content{position:relative;z-index:2;max-width:800px}
+        .hero-content h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:900;line-height:1.2;margin-bottom:20px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.8),0 0 20px rgba(230,57,70,.6);word-wrap:break-word;overflow-wrap:break-word}
+        .hero-content h1 span{color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.8),0 0 20px rgba(255,77,109,.6)}
+        .hero-content p{font-size:1.2rem;margin-bottom:35px;color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.8),0 0 15px rgba(102,217,232,.4)}
+        .hero-buttons{display:flex;flex-wrap:wrap;gap:20px}
+        .btn-primary{background-color:var(--primary-color);color:#fff;padding:15px 30px;border-radius:5px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 0 10px #e63946,0 0 20px #e63946;text-align:center}
+        .btn-secondary{background-color:transparent;color:#fff;border:2px solid #fff;padding:15px 30px;border-radius:5px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 0 10px #66d9e8,0 0 20px #66d9e8;text-align:center}
+        .floating-actions{position:fixed;bottom:100px;right:20px;display:flex;flex-direction:column;gap:15px;z-index:999}
+        .phone-call-btn,.whatsapp-btn{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff;box-shadow:0 4px 15px rgba(0,0,0,.2);border:none}
+        .phone-call-btn{background-color:#e63946}
+        .whatsapp-btn{background-color:#28a745}
+        .bottom-floating-buttons{position:fixed;bottom:0;left:0;width:100%;display:flex;justify-content:space-between;gap:8px;padding:12px 10px;padding-bottom:calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.98);box-shadow:0 -2px 14px rgba(0,0,0,.15);z-index:9998;box-sizing:border-box}
+        .bottom-call-btn,.bottom-emergency-btn,.bottom-location-btn{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 12px;border-radius:8px;font-weight:700;font-size:.95rem;flex:1;white-space:nowrap;border:none;cursor:pointer}
+        .bottom-call-btn i,.bottom-emergency-btn i,.bottom-location-btn i{font-size:1.3rem}
+        .bottom-call-btn,.bottom-emergency-btn{background-color:#e63946;color:#fff}
+        .bottom-location-btn{background-color:#28a745;color:#fff}
+        .geo-alert{padding:15px 20px;background-color:#fff3cd;border-left:4px solid #ffc107;margin-bottom:20px;border-radius:5px}
+        .geo-alert.success{background-color:#d4edda;border-left-color:#28a745}
+        .geo-alert.warning{background-color:#fff3cd;border-left-color:#ffc107}
+    </style>
+
+    <!-- Google Fonts: render-blocking olmayan yükleme (media swap tekniği) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <!-- Font Awesome: render-blocking olmayan yükleme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- AOS: render-blocking olmayan yükleme -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'">
+    <!-- Ana stylesheet: preload + async swap -->
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="style.css">
+    </noscript>
 </head>
 <body>
 
@@ -156,7 +225,9 @@
             <h1>7/24 Kesintisiz <span>Yol Yardım</span> <br> ve Lastik Hizmeti</h1>
             <p>Sıfır ve ikinci el lastik satışı, yerinde lastik tamiri ve balans ayarı. Yolda kaldığınızda profesyonel ekibimizle anında yanınızdayız.</p>
             <div class="hero-buttons">
-                <a href="#hizmetler" class="btn-primary">Hizmetleri İncele <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="https://wa.me/905519619618?text=Merhaba%2C%20yolda%20kald%C4%B1m%2C%20konumumu%20payla%C5%9F%C4%B1yorum" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <i class="fa-solid fa-location-dot"></i> Konum Gönder
+                </a>
                 <a href="tel:05519619618" class="btn-secondary">Acil Bize Ulaşın</a>
             </div>
         </div>
@@ -176,7 +247,10 @@
                 </ul>
             </div>
             <div class="about-image" data-aos="fade-left">
-                <img src="oto_lastik.jpeg" alt="Öztürk Kardeşler - Lastik Tamir Hizmeti">
+                <picture>
+                    <source srcset="oto_lastik.webp" type="image/webp">
+                    <img src="oto_lastik.jpg" alt="Öztürk Kardeşler - Lastik Tamir Hizmeti" width="800" height="1778" loading="lazy" decoding="async">
+                </picture>
             </div>
         </div>
     </section>
@@ -383,14 +457,15 @@
     </footer>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script>
-      AOS.init({
-        duration: 800,
-        once: true
+      document.addEventListener('DOMContentLoaded', function () {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({ duration: 800, once: true });
+        }
       });
     </script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script>
         // GEO LOCATION CONTROL
         function initGeoControl() {

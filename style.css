@@ -119,6 +119,11 @@ img {
     overflow-x: hidden;
 }
 
+.navbar.navbar-scrolled {
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -217,7 +222,12 @@ img {
     min-height: 100vh;
     height: auto;
     min-height: 600px;
-    background: url('oto_lastik.jpeg') center/cover no-repeat;
+    background-color: #1a1a1a;
+    background-image: url('oto_lastik.jpg');
+    background-image: image-set(url('oto_lastik.webp') type('image/webp') 1x, url('oto_lastik.jpg') type('image/jpeg') 1x);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     position: relative;

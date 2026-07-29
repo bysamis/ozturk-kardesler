@@ -85,18 +85,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Navbar Scroll Effect
-    let lastScroll = 0;
+    // Navbar Scroll Effect (rAF-throttled, class toggle to avoid forced reflow)
+    let scrollTicking = false;
+    const updateNavbarState = () => {
+        navbar.classList.toggle('navbar-scrolled', window.scrollY > 50);
+        scrollTicking = false;
+    };
     window.addEventListener('scroll', () => {
-        const currentScroll = window.scrollY;
-        if (currentScroll > 50) {
-            navbar.style.padding = '10px 0';
-            navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-        } else {
-            navbar.style.padding = '15px 0';
-            navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        if (!scrollTicking) {
+            requestAnimationFrame(updateNavbarState);
+            scrollTicking = true;
         }
-        lastScroll = currentScroll;
     }, { passive: true });
 
     // Theme Toggle
